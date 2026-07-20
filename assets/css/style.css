@@ -1,0 +1,2820 @@
+/*==================================================
+ECUACONSULTA DIGITAL
+STYLE.CSS
+Versión 0.3
+==================================================*/
+
+
+/*========================================
+RESET
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#1F2937;
+    background:#FFFFFF;
+}
+
+
+/*========================================
+CONTENEDOR
+========================================*/
+
+.container{
+    width:min(92%,1200px);
+    margin:auto;
+}
+
+
+/*========================================
+HEADER
+========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#011F47;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
+    transition:.35s;
+
+}
+
+.nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.brand{
+
+    color:#FFFFFF;
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+    letter-spacing:-0.5px;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+nav a{
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:.30s;
+
+}
+
+nav a:hover{
+
+    color:#F4C430;
+
+}
+
+
+/*========================================
+BOTONES
+========================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.gold{
+
+    background:#F4C430;
+
+    color:#011F47;
+
+}
+
+.gold:hover{
+
+    background:#FFD84D;
+
+}
+
+.light{
+
+    border:2px solid #FFFFFF;
+
+    color:#FFFFFF;
+
+}
+
+.light:hover{
+
+    background:#FFFFFF;
+
+    color:#011F47;
+
+}
+
+
+/*========================================
+HERO
+========================================*/
+
+.hero{
+
+    padding:150px 0 90px;
+
+    background:#011F47;
+
+    overflow:hidden;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.10);
+
+    color:#FFFFFF;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.03em;
+
+}
+
+h1{
+
+    color:#FFFFFF;
+
+    font-size:4.3rem;
+
+    line-height:1.12;
+
+    margin:28px 0;
+
+    font-weight:800;
+
+}
+
+.hero p{
+
+    color:#E8EEF8;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+}
+
+.actions{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:36px;
+
+}
+/*========================================
+TARJETA HERO
+========================================*/
+
+.card{
+
+    background:#0A2D63;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    padding:46px;
+
+    color:#FFFFFF;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    transition:all .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 40px 80px rgba(0,0,0,.35);
+
+}
+
+.badge2{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(244,196,48,.15);
+
+    color:#F4C430;
+
+    font-size:.80rem;
+
+    font-weight:700;
+
+    letter-spacing:.04em;
+
+    text-transform:uppercase;
+
+}
+
+.card h3{
+
+    margin:24px 0;
+
+    font-size:2rem;
+
+    line-height:1.35;
+
+    color:#FFFFFF;
+
+}
+
+.card ul{
+
+    list-style:none;
+
+    margin-top:28px;
+
+}
+
+.card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin:20px 0;
+
+    font-size:1.08rem;
+
+    color:#F2F5FA;
+
+}
+
+.check{
+
+    color:#F4C430;
+
+    font-size:1.35rem;
+
+    font-weight:900;
+
+}
+
+/*========================================
+DIAGNÓSTICO
+========================================*/
+
+.diagnostic{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:#E8EEF8;
+
+    color:#011F47;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.05em;
+
+}
+
+.section-header h2{
+
+    margin-top:24px;
+
+    font-size:2.8rem;
+
+    color:#011F47;
+
+    line-height:1.2;
+
+}
+
+.section-header p{
+
+    margin-top:20px;
+
+    color:#6B7280;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+}
+
+/*========================================
+GRID
+========================================*/
+
+.diagnostic-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:38px;
+
+    margin-top:25px;
+
+}
+
+/*========================================
+TARJETAS
+========================================*/
+
+.diagnostic-card{
+
+    background:#FFFFFF;
+
+    padding:42px;
+
+    border-radius:22px;
+
+    border:1px solid #E5E7EB;
+
+    border-top:4px solid transparent;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 24px rgba(1,31,71,.05);
+
+}
+
+.diagnostic-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#011F47;
+
+    border-top:4px solid #F4C430;
+
+    box-shadow:0 20px 60px rgba(1,31,71,.12);
+
+}
+
+.diagnostic-card h3{
+
+    color:#011F47;
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin-bottom:18px;
+
+}
+
+.diagnostic-card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+/*========================================
+LINK
+========================================*/
+
+.card-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    color:#011F47;
+
+    transition:.30s;
+
+}
+
+.card-link:hover{
+
+    color:#F4C430;
+
+    transform:translateX(6px);
+
+}
+
+/*========================================
+ICONOS ESTILO CHATGPT
+========================================*/
+
+.icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+    transition:all .35s ease;
+
+}
+
+.icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    stroke-width:2.4;
+
+}
+
+/* Amarillo */
+
+.icon-yellow{
+
+    background:#FFF7D6;
+
+    color:#EAB308;
+
+}
+
+/* Verde */
+
+.icon-green{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+/* Azul */
+
+.icon-blue{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+/* Morado */
+
+.icon-purple{
+
+    background:#F3E8FF;
+
+    color:#9333EA;
+
+}
+
+.diagnostic-card:hover .icon{
+
+    transform:scale(1.10) rotate(-5deg);
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:992px){
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .card{
+
+        margin-top:20px;
+
+    }
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        display:none;
+
+    }
+
+    .actions{
+
+        flex-direction:column;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .hero{
+
+        padding:150px 0 90px;
+
+    }
+
+    h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .section-header h2{
+
+        font-size:2rem;
+
+    }
+
+    .diagnostic-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card{
+
+        padding:34px;
+
+    }
+
+}
+
+/*========================================
+MÉTODO ECUACONSULTA
+========================================*/
+
+.method{
+
+    padding:140px 0;
+
+    background:#FFFFFF;
+
+}
+
+/*========================================
+GRID
+========================================*/
+
+.method-grid{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,minmax(230px,1fr));
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:80px;
+
+}
+
+/* Línea que conecta las etapas */
+
+.method-grid::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:70px;
+
+    left:12%;
+
+    width:76%;
+
+    height:3px;
+
+    background:#E8EEF8;
+
+    z-index:0;
+
+}
+
+/*========================================
+TARJETAS
+========================================*/
+
+.method-card{
+
+    position:relative;
+
+    z-index:2;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:50px 35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(1,31,71,.05);
+
+}
+
+.method-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#011F47;
+
+    box-shadow:0 25px 70px rgba(1,31,71,.12);
+
+}
+
+/*========================================
+NÚMERO
+========================================*/
+
+.method-number{
+
+    width:52px;
+
+    height:52px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    background:#EAF1FC;
+
+    color:#011F47;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:.95rem;
+
+    font-weight:800;
+
+    letter-spacing:.05em;
+
+}
+
+/*========================================
+ICONOS
+========================================*/
+
+.method-icon{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:26px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 30px;
+
+    transition:.35s;
+
+}
+
+.method-icon svg{
+
+    width:42px;
+
+    height:42px;
+
+    stroke-width:2.2;
+
+}
+
+.method-card:hover .method-icon{
+
+    transform:scale(1.10) rotate(-5deg);
+
+}
+
+/*========================================
+COLORES
+========================================*/
+
+.method-blue{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.method-green{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.method-gold{
+
+    background:#FEF3C7;
+
+    color:#EAB308;
+
+}
+
+.method-purple{
+
+    background:#F3E8FF;
+
+    color:#9333EA;
+
+}
+
+/*========================================
+TEXTOS
+========================================*/
+
+.method-card h3{
+
+    color:#011F47;
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.method-card p{
+
+    color:#64748B;
+
+    line-height:1.85;
+
+    font-size:1rem;
+
+}
+
+/*========================================
+FRASE FINAL
+========================================*/
+
+.method-quote{
+
+    margin-top:110px;
+
+    text-align:center;
+
+}
+
+.method-quote::before{
+
+    content:"";
+
+    display:block;
+
+    width:140px;
+
+    height:2px;
+
+    background:#E5E7EB;
+
+    margin:0 auto 45px;
+
+}
+
+.method-quote h3{
+
+    max-width:900px;
+
+    margin:0 auto 45px;
+
+    color:#011F47;
+
+    font-size:2.2rem;
+
+    font-weight:800;
+
+    line-height:1.45;
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+    .method-grid{
+
+        grid-template-columns:repeat(2,minmax(260px,1fr));
+
+    }
+
+    .method-grid::before{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .method{
+
+        padding:100px 0;
+
+    }
+
+    .method-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .method-card{
+
+        padding:40px 30px;
+
+    }
+
+    .method-icon{
+
+        width:82px;
+
+        height:82px;
+
+    }
+
+    .method-icon svg{
+
+        width:36px;
+
+        height:36px;
+
+    }
+
+    .method-number{
+
+        width:46px;
+
+        height:46px;
+
+    }
+
+    .method-quote h3{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/*========================================
+¿QUÉ CONSTRUIMOS?
+========================================*/
+
+.foundations{
+
+    padding:150px 0;
+
+    background:#F8FAFC;
+
+}
+
+/*========================================
+GRID
+========================================*/
+
+.foundations-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,minmax(300px,1fr));
+
+    gap:40px;
+
+    margin-top:100px;
+
+    align-items:stretch;
+
+}
+
+/*========================================
+TARJETAS
+========================================*/
+
+.foundation-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    min-height:360px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:55px 40px;
+
+    text-align:center;
+
+    transition:all .35s ease;
+
+    box-shadow:0 12px 35px rgba(1,31,71,.05);
+
+}
+
+.foundation-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#011F47;
+
+    box-shadow:0 25px 70px rgba(1,31,71,.12);
+
+}
+
+/*========================================
+ICONOS
+========================================*/
+
+.foundation-icon{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:32px;
+
+    font-size:2.6rem;
+
+    transition:.35s;
+
+}
+
+.foundation-card:hover .foundation-icon{
+
+    transform:scale(1.12) rotate(-5deg);
+
+}
+
+/*========================================
+COLORES
+========================================*/
+
+.foundation-blue{
+
+    background:#DBEAFE;
+
+}
+
+.foundation-green{
+
+    background:#DCFCE7;
+
+}
+
+.foundation-gold{
+
+    background:#FEF3C7;
+
+}
+
+.foundation-purple{
+
+    background:#F3E8FF;
+
+}
+
+.foundation-cyan{
+
+    background:#CFFAFE;
+
+}
+
+.foundation-red{
+
+    background:#FEE2E2;
+
+}
+
+/*========================================
+TEXTOS
+========================================*/
+
+.foundation-card h3{
+
+    color:#011F47;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+    transition:.3s;
+
+}
+
+.foundation-card:hover h3{
+
+    color:#0A4DA3;
+
+}
+
+.foundation-card p{
+
+    max-width:250px;
+
+    margin:0 auto;
+
+    color:#64748B;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+/*========================================
+FRASE FINAL
+========================================*/
+
+.foundations-quote{
+
+    margin-top:120px;
+
+    text-align:center;
+
+}
+
+.foundations-quote::before{
+
+    content:"";
+
+    display:block;
+
+    width:160px;
+
+    height:2px;
+
+    background:#E5E7EB;
+
+    margin:0 auto 45px;
+
+}
+
+.foundations-quote h3{
+
+    max-width:900px;
+
+    margin:0 auto 50px;
+
+    color:#011F47;
+
+    font-size:2.3rem;
+
+    font-weight:800;
+
+    line-height:1.45;
+
+}
+
+/*========================================
+BOTÓN
+========================================*/
+
+.foundations-quote .btn{
+
+    margin-top:15px;
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+    .foundations-grid{
+
+        grid-template-columns:repeat(2,minmax(280px,1fr));
+
+        gap:30px;
+
+    }
+
+    .foundation-card{
+
+        min-height:340px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .foundations{
+
+        padding:100px 0;
+
+    }
+
+    .foundations-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        margin-top:60px;
+
+    }
+
+    .foundation-card{
+
+        min-height:auto;
+
+        padding:40px 30px;
+
+    }
+
+    .foundation-icon{
+
+        width:85px;
+
+        height:85px;
+
+        border-radius:22px;
+
+        font-size:2.2rem;
+
+        margin-bottom:25px;
+
+    }
+
+    .foundation-card h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .foundation-card p{
+
+        max-width:100%;
+
+        font-size:1rem;
+
+    }
+
+    .foundations-quote{
+
+        margin-top:80px;
+
+    }
+
+    .foundations-quote h3{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/*========================================
+SERVICIOS ESTRATÉGICOS
+========================================*/
+
+.services{
+
+    padding:150px 0;
+
+    background:#FFFFFF;
+
+}
+
+/*========================================
+GRID
+========================================*/
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,minmax(300px,1fr));
+
+    gap:35px;
+
+    margin-top:90px;
+
+    align-items:stretch;
+
+}
+
+/*========================================
+TARJETAS
+========================================*/
+
+.service-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:45px 40px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(1,31,71,.05);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#011F47;
+
+    box-shadow:0 25px 70px rgba(1,31,71,.12);
+
+}
+
+/*========================================
+SERVICIO PRINCIPAL
+========================================*/
+
+.service-card.featured{
+
+    background:#011F47;
+
+    color:#FFFFFF;
+
+    border:none;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.service-card.featured::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:#F4C430;
+
+}
+
+.service-label{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    margin-bottom:25px;
+
+    border-radius:999px;
+
+    background:rgba(244,196,48,.15);
+
+    color:#F4C430;
+
+    font-size:.80rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+}
+
+.service-card.featured h3{
+
+    color:#FFFFFF;
+
+}
+
+.service-card.featured p{
+
+    color:rgba(255,255,255,.85);
+
+}
+
+.service-card.featured ul{
+
+    margin-top:30px;
+
+    padding-left:20px;
+
+}
+
+.service-card.featured li{
+
+    margin-bottom:14px;
+
+    color:#FFFFFF;
+
+}
+
+/*========================================
+TEXTOS
+========================================*/
+
+.service-card h3{
+
+    color:#011F47;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.service-card:hover h3{
+
+    color:#0A4DA3;
+
+}
+
+.service-card p{
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+    .services-grid{
+
+        grid-template-columns:repeat(2,minmax(280px,1fr));
+
+        gap:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services{
+
+        padding:100px 0;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        margin-top:60px;
+
+    }
+
+    .service-card{
+
+        padding:35px 30px;
+
+    }
+
+    .service-card h3{
+
+        font-size:1.45rem;
+
+    }
+
+    .service-card p{
+
+        font-size:1rem;
+
+    }
+
+}
+
+/*========================================
+¿POR QUÉ ELEGIR ECUACONSULTA?
+========================================*/
+
+.why{
+
+    padding:150px 0;
+
+    background:#F8FAFC;
+
+}
+
+/*========================================
+GRID
+========================================*/
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,minmax(300px,1fr));
+
+    gap:40px;
+
+    margin-top:90px;
+
+    align-items:stretch;
+
+}
+
+/*========================================
+TARJETAS
+========================================*/
+
+.why-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+    min-height:340px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:50px 40px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 10px 30px rgba(1,31,71,.05);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#011F47;
+
+    box-shadow:0 25px 70px rgba(1,31,71,.12);
+
+}
+
+/*========================================
+ICONOS
+========================================*/
+
+.why-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+    transition:.35s;
+
+}
+
+.why-icon svg{
+
+    width:40px;
+
+    height:40px;
+
+    stroke-width:2.2;
+
+}
+
+.why-card:hover .why-icon{
+
+    transform:scale(1.10) rotate(-5deg);
+
+}
+
+/*========================================
+COLORES
+========================================*/
+
+.why-blue{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.why-green{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.why-purple{
+
+    background:#F3E8FF;
+
+    color:#9333EA;
+
+}
+
+.why-gold{
+
+    background:#FEF3C7;
+
+    color:#EAB308;
+
+}
+
+.why-cyan{
+
+    background:#CFFAFE;
+
+    color:#0891B2;
+
+}
+
+.why-red{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+/*========================================
+TEXTOS
+========================================*/
+
+.why-card h3{
+
+    color:#011F47;
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.why-card:hover h3{
+
+    color:#0A4DA3;
+
+}
+
+.why-card p{
+
+    color:#64748B;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    max-width:260px;
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+    .why-grid{
+
+        grid-template-columns:repeat(2,minmax(280px,1fr));
+
+        gap:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .why{
+
+        padding:100px 0;
+
+    }
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        margin-top:60px;
+
+    }
+
+    .why-card{
+
+        min-height:auto;
+
+        padding:40px 30px;
+
+    }
+
+    .why-icon{
+
+        width:80px;
+
+        height:80px;
+
+        border-radius:20px;
+
+    }
+
+    .why-icon svg{
+
+        width:34px;
+
+        height:34px;
+
+    }
+
+    .why-card h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .why-card p{
+
+        max-width:100%;
+
+        font-size:1rem;
+
+    }
+
+}
+
+/*========================================
+CÓMO TRABAJAMOS
+========================================*/
+
+.process{
+
+    padding:150px 0;
+
+    background:#FFFFFF;
+
+}
+
+.process-timeline{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:35px;
+
+    margin-top:90px;
+
+}
+
+.process-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:45px;
+
+    left:8%;
+
+    width:84%;
+
+    height:3px;
+
+    background:#E5E7EB;
+
+    z-index:0;
+
+}
+
+.process-step{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+}
+
+.process-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 30px;
+
+    transition:.35s;
+
+}
+
+.process-icon svg{
+
+    width:40px;
+
+    height:40px;
+
+    stroke-width:2.2;
+
+}
+
+.process-step:hover .process-icon{
+
+    transform:scale(1.10);
+
+}
+
+.process-step h3{
+
+    color:#011F47;
+
+    font-size:1.35rem;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+}
+
+.process-step p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+/* Colores */
+
+.process-blue{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.process-green{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.process-gold{
+
+    background:#FEF3C7;
+
+    color:#EAB308;
+
+}
+
+.process-purple{
+
+    background:#F3E8FF;
+
+    color:#9333EA;
+
+}
+
+.process-cyan{
+
+    background:#CFFAFE;
+
+    color:#0891B2;
+
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .process-timeline{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .process-timeline::before{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .process{
+
+        padding:100px 0;
+
+    }
+
+    .process-timeline{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        margin-top:60px;
+
+    }
+
+}
+
+/*========================================
+CTA FINAL
+========================================*/
+
+.cta{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.cta-box{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:90px;
+
+    align-items:center;
+
+    background:#011F47;
+
+    border-radius:32px;
+
+    padding:70px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 80px rgba(1,31,71,.18);
+
+}
+
+/*========================================
+LÍNEA SUPERIOR
+========================================*/
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:6px;
+
+    background:#F4C430;
+
+}
+
+/*========================================
+DECORACIÓN SUPERIOR
+========================================*/
+
+.cta-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+/*========================================
+DECORACIÓN INFERIOR
+========================================*/
+
+.cta-box .cta-decoration{
+
+    position:absolute;
+
+    left:-90px;
+
+    bottom:-90px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.cta-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta-content .section-badge{
+
+    background:rgba(255,255,255,.12);
+
+    color:#FFFFFF;
+
+}
+
+/*========================================
+TEXTOS
+========================================*/
+
+.cta-content h2{
+
+    margin:22px 0 26px;
+
+    color:#FFFFFF;
+
+    font-size:3.3rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    max-width:650px;
+
+}
+
+.cta-content p{
+
+    color:rgba(255,255,255,.90);
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    max-width:620px;
+
+}
+
+/*========================================
+PANEL
+========================================*/
+
+.cta-panel{
+
+    position:relative;
+
+    z-index:2;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:24px;
+
+    padding:42px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.cta-panel h3{
+
+    color:#FFFFFF;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+.cta-panel ul{
+
+    list-style:none;
+
+    margin:0 0 35px;
+
+    padding:0;
+
+}
+
+.cta-panel li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:20px;
+
+    color:#FFFFFF;
+
+    font-size:1.05rem;
+
+    transition:.25s;
+
+}
+
+.cta-panel li:hover{
+
+    transform:translateX(6px);
+
+}
+
+.check{
+
+    color:#F4C430;
+
+    font-size:1.45rem;
+
+    font-weight:900;
+
+}
+
+/*========================================
+BOTONES
+========================================*/
+
+.cta-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.cta-buttons .btn{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:20px 30px;
+
+    border-radius:14px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.30s ease;
+
+}
+
+/*========================================
+BOTÓN PRINCIPAL
+========================================*/
+
+.cta-buttons .btn-primary{
+
+    background:#F4C430;
+
+    color:#011F47;
+
+    border:2px solid #F4C430;
+
+    box-shadow:0 12px 30px rgba(244,196,48,.20);
+
+}
+
+.cta-buttons .btn-primary:hover{
+
+    background:#FFFFFF;
+
+    border-color:#FFFFFF;
+
+    color:#011F47;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+BOTÓN SECUNDARIO
+========================================*/
+
+.cta-buttons .btn-secondary{
+
+    background:#FFFFFF;
+
+    color:#011F47;
+
+    border:2px solid #FFFFFF;
+
+}
+
+.cta-buttons .btn-secondary:hover{
+
+    background:#F4C430;
+
+    border-color:#F4C430;
+
+    color:#011F47;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+RESPONSIVE
+========================================*/
+
+@media(max-width:992px){
+
+    .cta{
+
+        padding:90px 0;
+
+    }
+
+    .cta-box{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        padding:50px 35px;
+
+    }
+
+    .cta-content{
+
+        text-align:center;
+
+    }
+
+    .cta-content h2{
+
+        font-size:2.4rem;
+
+        max-width:100%;
+
+    }
+
+    .cta-content p{
+
+        max-width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .cta{
+
+        padding:70px 0;
+
+    }
+
+    .cta-box{
+
+        padding:35px 25px;
+
+        border-radius:24px;
+
+    }
+
+    .cta-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .cta-content p{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+    .cta-panel{
+
+        padding:30px;
+
+    }
+
+    .cta-panel h3{
+
+        font-size:1.35rem;
+
+    }
+
+    .cta-buttons .btn{
+
+        padding:18px 24px;
+
+    }
+
+}   
+
+/*========================================
+FOOTER
+========================================*/
+
+.footer{
+
+    background:#011F47;
+
+    color:#FFFFFF;
+
+    padding:90px 0 35px;
+
+    margin-top:120px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:60px;
+
+    margin-bottom:70px;
+
+}
+
+/*==============================
+MARCA
+==============================*/
+
+.footer-brand h3{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+    color:#FFFFFF;
+
+}
+
+.footer-brand p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.9;
+
+    max-width:420px;
+
+}
+
+/*==============================
+REDES SOCIALES
+==============================*/
+
+.footer-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.footer-social a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    color:#FFFFFF;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:all .35s ease;
+
+}
+
+.footer-social i{
+
+    font-size:22px;
+
+    line-height:1;
+
+    transition:transform .35s ease;
+
+}
+
+.footer-social a:hover{
+
+    background:#F4C430;
+
+    color:#011F47;
+
+    border-color:#F4C430;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(244,196,48,.35);
+
+}
+
+.footer-social a:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/*==============================
+COLUMNAS
+==============================*/
+
+.footer-column h4{
+
+    color:#FFFFFF;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.footer-column ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-column li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.6;
+
+}
+
+.footer-column a{
+
+    color:rgba(255,255,255,.75);
+
+    text-decoration:none;
+
+    transition:all .30s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:#F4C430;
+
+    padding-left:6px;
+
+}
+
+/*==============================
+ICONOS LUCIDE
+==============================*/
+
+.footer-column svg{
+
+    width:18px;
+
+    height:18px;
+
+    flex-shrink:0;
+
+    color:#F4C430;
+
+}
+
+/*==============================
+PARTE INFERIOR
+==============================*/
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.10);
+
+}
+
+.footer-bottom p{
+
+    color:rgba(255,255,255,.65);
+
+    margin:0;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.65);
+
+    text-decoration:none;
+
+    transition:all .30s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#F4C430;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:50px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:70px 0 30px;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+        text-align:center;
+
+    }
+
+    .footer-brand p{
+
+        margin:auto;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+    .footer-column li{
+
+        justify-content:center;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}
+
+.footer-tagline{
+
+    color:#F4C430;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    margin:10px 0 18px;
+
+    letter-spacing:.04em;
+
+}
