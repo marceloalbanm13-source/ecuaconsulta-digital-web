@@ -1,7 +1,7 @@
 /*==================================================
 ECUACONSULTA DIGITAL
 STYLE.CSS
-Versión 0.4
+Versión 0.5 — responsive corregido
 ==================================================*/
 
 
@@ -3200,5 +3200,151 @@ BOTÓN
 .control-button .btn-primary:hover::after{
 
     transform:translateX(5px);
+
+}
+
+/*====================================================
+RESPONSIVE — ¿TU NEGOCIO ESTÁ BAJO CONTROL?
+(sección agregada: antes no tenía media queries,
+por eso las tarjetas se veían apretadas en móvil)
+=====================================================*/
+
+@media(max-width:992px){
+
+    .control-columns{
+
+        gap:32px;
+
+    }
+
+    .card-content h3{
+
+        font-size:26px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .business-control{
+
+        padding:90px 0;
+
+    }
+
+    .control-columns{
+
+        grid-template-columns:1fr;
+
+        gap:34px;
+
+        margin-top:50px;
+
+    }
+
+    .card-image img{
+
+        height:260px;
+
+    }
+
+    .card-content{
+
+        padding:30px;
+
+    }
+
+    .card-content h3{
+
+        font-size:24px;
+
+    }
+
+    .card-subtitle{
+
+        font-size:16px;
+
+    }
+
+    .business-control .section-description{
+
+        font-size:17px;
+
+    }
+
+    .control-message p{
+
+        font-size:17px;
+
+    }
+
+    .control-button .btn-primary{
+
+        width:100%;
+
+        padding:18px 24px;
+
+    }
+
+}
+
+/*====================================================
+RESPONSIVE — PANTALLAS MUY PEQUEÑAS (<480px)
+Ajuste fino para celulares chicos (iPhone SE y similares)
+=====================================================*/
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.6rem;
+
+    }
+
+    .cta-content h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .badge{
+
+        font-size:.75rem;
+
+        padding:8px 14px;
+
+    }
+
+    .card{
+
+        padding:26px;
+
+    }
+
+    .card h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .method-quote h3,
+    .foundations-quote h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .footer-brand h3{
+
+        font-size:1.6rem;
+
+    }
 
 }
