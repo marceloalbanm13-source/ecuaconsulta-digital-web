@@ -46,6 +46,44 @@ h1, h2, h3{
 
 
 /*========================================
+SKIP LINK (accesibilidad de teclado)
+Oculto visualmente hasta que recibe foco
+========================================*/
+
+.skip-link{
+
+    position:absolute;
+
+    top:-100px;
+
+    left:12px;
+
+    z-index:2000;
+
+    background:#F4C430;
+
+    color:#011F47;
+
+    padding:14px 22px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:top .25s ease;
+
+}
+
+.skip-link:focus{
+
+    top:12px;
+
+}
+
+
+/*========================================
 CONTENEDOR
 ========================================*/
 
@@ -435,7 +473,7 @@ TARJETA HERO
 
 }
 
-.card h3{
+.card h2{
 
     margin:24px 0;
 
@@ -531,7 +569,7 @@ DIAGNÓSTICO
 
     margin-top:20px;
 
-    color:#6B7280;
+    color:#4B5563;
 
     font-size:1.08rem;
 
@@ -605,7 +643,7 @@ TARJETAS
 
 .diagnostic-card p{
 
-    color:#6B7280;
+    color:#4B5563;
 
     line-height:1.8;
 
@@ -1025,7 +1063,7 @@ TEXTOS
 
 .method-card p{
 
-    color:#64748B;
+    color:#4B5563;
 
     line-height:1.85;
 
@@ -1293,7 +1331,7 @@ TEXTOS
 
     margin:0 auto;
 
-    color:#64748B;
+    color:#4B5563;
 
     font-size:1.05rem;
 
@@ -1615,7 +1653,7 @@ TEXTOS
 
 .service-card p{
 
-    color:#64748B;
+    color:#4B5563;
 
     line-height:1.9;
 
@@ -1813,7 +1851,7 @@ TEXTOS
 
 .why-card p{
 
-    color:#64748B;
+    color:#4B5563;
 
     font-size:1.05rem;
 
@@ -2005,7 +2043,7 @@ CÓMO TRABAJAMOS
 
 .process-step p{
 
-    color:#64748B;
+    color:#4B5563;
 
     line-height:1.8;
 
@@ -3027,7 +3065,7 @@ CONTENIDO
 
     font-size:17px;
 
-    color:#64748B;
+    color:#4B5563;
 
     line-height:1.8;
 
