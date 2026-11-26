@@ -17,6 +17,7 @@ RESET
 
 html{
     scroll-behavior:smooth;
+    scroll-padding-top:90px;
 }
 
 :root{
@@ -3385,4 +3386,393 @@ Ajuste fino para celulares chicos (iPhone SE y similares)
 
     }
 
+}
+
+
+/*========================================
+PÁGINAS WEB PARA NEGOCIOS (PORTAFOLIO)
+========================================*/
+
+.webs{
+    padding:110px 0;
+    background:#F5F8FC;
+}
+
+.webs .section-header{
+    margin-bottom:56px;
+}
+
+.webs-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:34px;
+}
+
+.web-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(1,31,71,.06);
+    transition:.35s;
+    display:flex;
+    flex-direction:column;
+}
+
+.web-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 70px rgba(1,31,71,.14);
+}
+
+.web-shot{
+    display:block;
+    aspect-ratio:16/10;
+    overflow:hidden;
+    background:#011F47;
+    border-bottom:1px solid #E5E7EB;
+}
+
+.web-shot img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    display:block;
+    transition:transform .6s ease;
+}
+
+.web-card:hover .web-shot img{
+    transform:scale(1.04);
+}
+
+.web-body{
+    padding:30px 32px 34px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.web-tag{
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#0F766E;
+}
+
+.web-body h3{
+    margin:10px 0 10px;
+    font-size:1.45rem;
+    color:#011F47;
+}
+
+.web-body p{
+    color:#4B5563;
+    line-height:1.7;
+}
+
+.web-link{
+    margin-top:auto;
+    padding-top:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-weight:700;
+    color:#011F47;
+    text-decoration:none;
+}
+
+.web-link svg{
+    width:18px;
+    height:18px;
+    transition:transform .25s;
+}
+
+.web-link:hover svg{
+    transform:translate(3px,-3px);
+}
+
+.webs-incluye{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-top:44px;
+}
+
+.webs-incluye li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:14px;
+    padding:16px 18px;
+    font-weight:600;
+    color:#011F47;
+    font-size:.95rem;
+}
+
+.webs-incluye svg{
+    width:20px;
+    height:20px;
+    color:#0F766E;
+    flex:none;
+}
+
+.webs-cta{
+    margin-top:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.webs-cta .btn{
+    gap:10px;
+}
+
+.webs-cta .btn svg{
+    width:20px;
+    height:20px;
+}
+
+.webs-cta span{
+    color:#4B5563;
+}
+
+.service-more{
+    display:inline-block;
+    margin-top:18px;
+    font-weight:700;
+    color:#0F766E;
+    text-decoration:none;
+}
+
+@media(max-width:980px){
+    .webs-incluye{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:760px){
+    .webs{
+        padding:80px 0;
+    }
+    .webs-grid{
+        grid-template-columns:1fr;
+        gap:24px;
+    }
+    .web-body{
+        padding:24px 22px 28px;
+    }
+    .webs-incluye{
+        grid-template-columns:1fr;
+    }
+    .webs-cta .btn{
+        width:100%;
+    }
+}
+
+
+/*========================================
+SERVICIOS SIMPLES (problema → recibes → resultado)
+========================================*/
+
+.svc{
+    padding:110px 0;
+    background:#FFFFFF;
+}
+
+.svc .section-header{
+    margin-bottom:56px;
+}
+
+.svc-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:28px;
+}
+
+.svc-card{
+    flex:0 1 calc((100% - 56px) / 3);
+}
+
+.svc-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:22px;
+    padding:32px 30px 30px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 10px 30px rgba(1,31,71,.05);
+    transition:.35s;
+}
+
+.svc-card:hover{
+    transform:translateY(-8px);
+    border-color:#011F47;
+    box-shadow:0 25px 70px rgba(1,31,71,.12);
+}
+
+.svc-head{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:22px;
+}
+
+.svc-head .icon-tile{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    display:grid;
+    place-items:center;
+    color:#FFFFFF;
+    flex:none;
+}
+
+.svc-head .icon-tile svg{
+    width:26px;
+    height:26px;
+}
+
+.svc-head h3{
+    font-size:1.3rem;
+    color:#011F47;
+    line-height:1.25;
+}
+
+.svc-steps{
+    display:grid;
+    gap:14px;
+    margin-bottom:24px;
+}
+
+.svc-steps dt{
+    font-size:.75rem;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#6B7280;
+    margin-bottom:4px;
+}
+
+.svc-steps dd{
+    margin:0;
+    color:#374151;
+    line-height:1.6;
+}
+
+.svc-result{
+    background:#ECFDF5;
+    border-left:4px solid #10B981;
+    border-radius:10px;
+    padding:12px 14px;
+}
+
+.svc-result dt{
+    color:#047857;
+}
+
+.svc-result dd{
+    color:#064E3B;
+    font-weight:600;
+}
+
+.svc-more{
+    font-weight:700;
+    color:#0F766E;
+    text-decoration:none;
+    margin:-8px 0 18px;
+}
+
+.svc-btn{
+    margin-top:auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:13px 18px;
+    border-radius:12px;
+    background:#011F47;
+    color:#FFFFFF;
+    font-weight:700;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.svc-btn:hover{
+    background:#0B3470;
+}
+
+.svc-btn svg{
+    width:18px;
+    height:18px;
+}
+
+.method-note{
+    max-width:760px;
+    margin:44px auto 0;
+    text-align:center;
+    color:#4B5563;
+    line-height:1.7;
+    background:#FFFFFF;
+    border:1px dashed #CBD5E1;
+    border-radius:14px;
+    padding:18px 22px;
+}
+
+@media(max-width:1080px){
+    .svc-card{
+        flex-basis:calc((100% - 28px) / 2);
+    }
+}
+
+@media(max-width:700px){
+    .svc{
+        padding:80px 0;
+    }
+    .svc-grid{
+        gap:20px;
+    }
+    .svc-card{
+        flex-basis:100%;
+    }
+    .svc-card{
+        padding:26px 22px;
+    }
+}
+
+
+/*========================================
+LOGO (pin con barras)
+========================================*/
+
+.brand{
+    gap:10px;
+}
+
+.brand-pin{
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.footer-logo .brand-pin{
+    width:36px;
+    height:36px;
+}
+
+.brand-accent{
+    color:#F4C430;
 }
